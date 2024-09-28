@@ -1,6 +1,7 @@
 #pragma once
 #include <windows.h>
-#include<d3d9.h>
+#include<d3d9.h>//////////必加
+#include <d3dx9.h>//////////必加
 
 #include"imgui/imconfig.h"
 #include"imgui/imgui.h"

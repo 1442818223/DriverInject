@@ -84,7 +84,7 @@ void MineImGuiInit(IDirect3DDevice9* pd3dDevice) {
 	
 }
 // 窗口消息处理，获取窗操作消息转嫁给IMGUI
-extern /*IMGUI_IMPL_API*/ LRESULT  ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+extern IMGUI_IMPL_API LRESULT  ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT _stdcall hkwndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	if (ImGui_ImplWin32_WndProcHandler(hwnd, msg, wParam, lParam)) return true;
